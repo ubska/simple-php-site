@@ -33,7 +33,7 @@
                 <label>Password</label>
                 <input type="password" class="one-line" name="password">
 
-                <button type="button">Sign Up</button>
+                <button type="submit">Sign Up</button>
             </form>
         </div>
     </div>
