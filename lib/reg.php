@@ -35,3 +35,9 @@ $pdo = new PDO('mysql:hots=localhost;dbname:php-website;port=8889', 'root', 'roo
 // query SQL per inserire nuovi dati nella tabella users del DB
 // ???? protegge il codice da SQL injection
 $sql = 'INSERT INTO users(login, username, email, password) VALUES(?,?,?,?)';
+
+
+//  prepara una query SQL per essere eseguita
+$query = $pdo->prepare($sql);
+// eseguo la query 
+$query->execute([$login, $username, $email, $password]);
