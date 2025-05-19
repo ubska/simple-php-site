@@ -10,18 +10,7 @@
 
 <body>
     <div class="wrapper">
-        <header class="container">
-            <span class="logo">logo</span>
-            <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li class="active"><a href="about.php">About us</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">News</a></li>
-                    <li class="btn"><a href="contacts.php">Contacts</a></li>
-                </ul>
-            </nav>
-        </header>
+        <?php require_once "blocks/header.php"; ?>
 
         <div class="hero-about container">
             <div class="info">
