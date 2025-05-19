@@ -32,3 +32,6 @@ $pdo = new PDO('mysql:hots=localhost;dbname:php-website;port=8889', 'root', 'roo
 
 
 //INSERT
+// query SQL per inserire nuovi dati nella tabella users del DB
+// ???? protegge il codice da SQL injection
+$sql = 'INSERT INTO users(login, username, email, password) VALUES(?,?,?,?)';
