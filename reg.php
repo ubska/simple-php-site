@@ -16,22 +16,22 @@
             <h2>Registration</h2>
             <p>Lorem Ipsum is simply dummy text of the printing .</p>
 
-            <form>
+            <form method="post" action="lib/reg.php">
                 <div class="inline">
                     <div>
                         <label>Login</label>
-                        <input type="text">
+                        <input type="text" name="login">
                     </div>
                     <div>
                         <label>Name</label>
-                        <input type="text">
+                        <input type="text" name="username">
                     </div>
                 </div>
                 <label>Email Address</label>
-                <input type="email" class="one-line">
+                <input type="email" class="one-line" name="email">
 
                 <label>Password</label>
-                <input type="email" class="one-line">
+                <input type="password" class="one-line" name="password">
 
                 <button type="button">Sign Up</button>
             </form>
