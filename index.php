@@ -10,7 +10,7 @@
 
 <body>
     <div class="wrapper">
-
+        <?php require_once "blocks/header.php"; ?>
 
         <div class="hero container">
             <div class="hero--info">
