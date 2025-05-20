@@ -16,7 +16,7 @@
             <h2>Login</h2>
             <p>Lorem Ipsum is simply dummy text of the printing .</p>
 
-            <form method="post" action="lib/reg.php">
+            <form method="post" action="lib/auth.php">
                 <div class="inline">
                     <div>
                         <label>Login</label>
