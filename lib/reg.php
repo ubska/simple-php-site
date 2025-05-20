@@ -42,3 +42,6 @@ $sql = 'INSERT INTO users(login, username, email, password) VALUES(?,?,?,?)';
 $query = $pdo->prepare($sql);
 // eseguo la query 
 $query->execute([$login, $username, $email, $password]);
+
+
+header('Location: ../index.php');
