@@ -13,7 +13,7 @@
         <?php require_once "blocks/header.php"; ?>
 
         <div class="container trending">
-            <a href="#" class="see-all">SEE ALL</a>
+            <!-- <a href="#" class="see-all">SEE ALL</a> -->
             <h3>Currently Trending Games</h3>
 
             <div class="games">
@@ -21,7 +21,7 @@
                 // DB
                 require_once "lib/db.php";
                 // SQL
-                $sql = 'SELECT * FROM trending ORDER BY id DESC LIMIT 4';
+                $sql = 'SELECT * FROM trending ORDER BY id DESC';
                 $query = $pdo->prepare($sql);
                 $query->execute();
                 $games = $query->fetchAll(PDO::FETCH_OBJ);

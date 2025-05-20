@@ -24,7 +24,7 @@
         </div>
 
         <div class="container trending">
-            <a href="/trending.php" class="see-all">SEE ALL</a>
+            <a href="./trending.php" class="see-all">SEE ALL</a>
             <h3>Currently Trending Games</h3>
 
             <div class="games">
