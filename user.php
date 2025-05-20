@@ -14,7 +14,14 @@
     <div class="feedback">
         <div class="container">
             <h2>Dashboard</h2>
-            <p>Ciao: <?php echo $_COOKIE['login']; ?>.</p>
+            <p>Welcome:
+                <b>
+                    <?php
+                    echo $_COOKIE['login'];
+                    ?>
+                </b>
+
+            </p>
 
 
         </div>
