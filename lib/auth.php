@@ -30,6 +30,6 @@ $query->execute([$login, $password]);
 if ($query->rowCount() == 0) {
     echo "user not exist";
 } else {
-    setcookie('login', $login, time() + 3600 * 24 * 30, "../index.php");
+    setcookie('login', $login, time() + 3600 * 24 * 30, "/");
     header('Location: ../user.php');
 }
