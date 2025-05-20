@@ -34,8 +34,8 @@
                 // SQL
                 $sql = 'SELECT * FROM trending ORDER BY id DESC LIMIT 4';
                 $query = $pdo->prepare($sql);
+                $query->execute();
                 $games = $query->fetchAll(PDO::FETCH_OBJ);
-                print_r($games);
                 foreach ($games as $el)
                     echo ' <div class="block">
                     <img src="img/' . $el->image . '" alt="">
