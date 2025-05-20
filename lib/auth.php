@@ -27,7 +27,8 @@ $query = $pdo->prepare($sql);
 $query->execute([$login, $password]);
 
 
-if ($query->rowCount() == 0)
+if ($query->rowCount() == 0) {
     echo "user not exist";
-else
-    echo "done";
+} else {
+    header('Location: ../user.php');
+}
