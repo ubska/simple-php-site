@@ -27,9 +27,7 @@ if (strlen($password) < 4) {
 }
 
 //DB
-// PDO è una classe in PHP che permette di connettersi a un database
-$pdo = new PDO('mysql:host=localhost;dbname=php-website;port=8889', 'root', 'root');
-
+require "db.php";
 
 // password
 $salt = '55àù+è"£$%&/%_5';
