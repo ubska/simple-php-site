@@ -15,3 +15,19 @@ if (strlen($password) < 4) {
 
 // DB
 require "db.php";
+
+// password
+$salt = '55àù+è"£$%&/%_5';
+$password = md5($salt . $password);
+
+
+// auth user
+$sql = 'SELECT id FROM users WHERE login = ? AND password = ?';
+$query = $pdo->prepare($sql);
+$query->execute([$login, $password]);
+
+
+if ($query->rowCount() == 0)
+    echo "user not exist";
+else
+    echo "done";
