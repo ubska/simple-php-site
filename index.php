@@ -24,7 +24,7 @@
         </div>
 
         <div class="container trending">
-            <a href="#" class="see-all">SEE ALL</a>
+            <a href="/trending.php" class="see-all">SEE ALL</a>
             <h3>Currently Trending Games</h3>
 
             <div class="games">
@@ -55,7 +55,7 @@
             <h3>Lorem Ipsum</h3>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                 industry's standard dummy text ever since the 1500s,</p>
-            <img src="/img/banner.png" alt="">
+            <img src="img/banner.png" alt="">
         </div>
     </div>
 
