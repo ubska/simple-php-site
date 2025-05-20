@@ -40,7 +40,7 @@
                     echo ' <div class="block">
                     <img src="img/' . $el->image . '" alt="">
                     <span><img src="img/fire.svg" alt=""> ' . $el->followers . ' Followers</span>
-                </div>'
+                </div>';
                 ?>
 
 
