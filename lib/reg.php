@@ -31,6 +31,9 @@ if (strlen($password) < 4) {
 $pdo = new PDO('mysql:host=localhost;dbname=php-website;port=8889', 'root', 'root');
 
 
+// password
+$salt = '55àù+è"£$%&/%_5';
+$password = md5($salt . $password);
 
 //INSERT
 // query SQL per inserire nuovi dati nella tabella users del DB
