@@ -28,22 +28,22 @@
             <h3>Currently Trending Games</h3>
 
             <div class="games">
-                <div class="block">
-                    <img src="/img/game1.png" alt="">
-                    <span><img src="/img/fire.svg" alt=""> 40 Followers</span>
-                </div>
-                <div class="block">
-                    <img src="/img/game2.png" alt="">
-                    <span><img src="/img/fire.svg" alt=""> 40 Followers</span>
-                </div>
-                <div class="block">
-                    <img src="/img/game3.png" alt="">
-                    <span><img src="/img/fire.svg" alt=""> 40 Followers</span>
-                </div>
-                <div class="block">
-                    <img src="/img/game4.png" alt="">
-                    <span><img src="/img/fire.svg" alt=""> 40 Followers</span>
-                </div>
+                <?php
+                // DB
+                require_once "lib/db.php";
+                // SQL
+                $sql = 'SELECT * FROM trending ORDER BY id DESC LIMIT 4';
+                $query = $pdo->prepare($sql);
+                $games = $query->fetchAll(PDO::FETCH_OBJ);
+                print_r($games);
+                foreach ($games as $el)
+                    echo ' <div class="block">
+                    <img src="img/' . $el->image . '" alt="">
+                    <span><img src="img/fire.svg" alt=""> ' . $el->followers . ' Followers</span>
+                </div>'
+                ?>
+
+
             </div>
         </div>
 
@@ -66,34 +66,34 @@
                 industry's standard dummy text ever since the 1500s,</p>
             <div class="info">
                 <div class="block">
-                    <img src="/img/feature1.png" alt="">
+                    <img src="img/feature1.png" alt="">
                     <p>Mobile Game Development</p>
-                    <img src="/img/arrow.png" alt="">
+                    <img src="img/arrow.png" alt="">
                 </div>
                 <div class="block">
-                    <img src="/img/feature2.png" alt="">
+                    <img src="img/feature2.png" alt="">
                     <p>PC Game Development</p>
-                    <img src="/img/arrow.png" alt="">
+                    <img src="img/arrow.png" alt="">
                 </div>
                 <div class="block">
-                    <img src="/img/feature3.png" alt="">
+                    <img src="img/feature3.png" alt="">
                     <p>PS4 Game Development</p>
-                    <img src="/img/arrow.png" alt="">
+                    <img src="img/arrow.png" alt="">
                 </div>
                 <div class="block">
-                    <img src="/img/feature4.png" alt="">
+                    <img src="img/feature4.png" alt="">
                     <p>AR/VR Solutions</p>
-                    <img src="/img/arrow.png" alt="">
+                    <img src="img/arrow.png" alt="">
                 </div>
                 <div class="block">
-                    <img src="/img/feature5.png" alt="">
+                    <img src="img/feature5.png" alt="">
                     <p>AR/ VR design</p>
-                    <img src="/img/arrow.png" alt="">
+                    <img src="img/arrow.png" alt="">
                 </div>
                 <div class="block">
-                    <img src="/img/feature6.png" alt="">
+                    <img src="img/feature6.png" alt="">
                     <p>3D Modelings</p>
-                    <img src="/img/arrow.png" alt="">
+                    <img src="img/arrow.png" alt="">
                 </div>
             </div>
         </div>
@@ -104,14 +104,14 @@
             <h3>Our Recent Projects</h3>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
             <div class="images">
-                <img src="/img/Project1.png" alt="">
-                <img src="/img/Project2.png" alt="">
-                <img src="/img/Project3.png" alt="">
+                <img src="img/Project1.png" alt="">
+                <img src="img/Project2.png" alt="">
+                <img src="img/Project3.png" alt="">
             </div>
             <div class="images">
-                <img src="/img/Project4.png" alt="">
-                <img src="/img/Project5.png" alt="">
-                <img src="/img/Project6.png" alt="">
+                <img src="img/Project4.png" alt="">
+                <img src="img/Project5.png" alt="">
+                <img src="img/Project6.png" alt="">
             </div>
             <a href="" class="see-all">SEE ALL</a>
         </div>
