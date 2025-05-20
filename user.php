@@ -14,7 +14,7 @@
     <div class="feedback">
         <div class="container">
             <h2>Dashboard</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing .</p>
+            <p>Ciao: <?php echo $_COOKIE['login']; ?>.</p>
 
 
         </div>
